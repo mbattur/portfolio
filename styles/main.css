@@ -1,0 +1,68 @@
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    font-family:;
+    color: black;
+    
+}
+
+.landing {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255,255,255);
+}
+
+.navbar {
+    height: 10rem;
+    width: 100%;
+    background-color: rgb(255,255,255);
+    border-top: solid black 0.4rem;
+    border-bottom: solid black 1rem;
+}
+
+.navbar .logo {
+    display: table;
+    position: relative;
+    margin: 2rem auto 0 auto;
+    cursor: pointer;
+}
+
+ .link-container  {
+    display: table;
+    position: relative;
+    margin: 2rem auto 0 auto;
+}
+
+.link-container .navbar-link {
+    border-right: 1px solid black;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: black;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+
+
+.link-container .navbar-link:last-child {
+    border-right: none;
+}
+
+.link-container .navbar-link:hover {
+    color: rgb(204,204,204);
+}
+
+.link-container .navbar-link:active {
+    color: rgb(204,204,204);
+}
+
+
+
+
