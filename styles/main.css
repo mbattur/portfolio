@@ -4,9 +4,17 @@ html {
 }
 
 body {
-    font-family:;
+    font-family: 'Raleway', sans-serif;
     color: black;
     
+}
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border-top: solid black 0.4rem;
 }
 
 .landing {
@@ -17,24 +25,28 @@ body {
 }
 
 .navbar {
-    height: 10rem;
+    position: relative;
+    height: 8rem;
     width: 100%;
     background-color: rgb(255,255,255);
-    border-top: solid black 0.4rem;
     border-bottom: solid black 1rem;
 }
 
 .navbar .logo {
     display: table;
     position: relative;
-    margin: 2rem auto 0 auto;
+    margin: 3rem auto 0 auto;
     cursor: pointer;
 }
 
- .link-container  {
-    display: table;
-    position: relative;
-    margin: 2rem auto 0 auto;
+.link-container  {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 444px;
+    margin-left: -222px;
+    left: 50%;
+    
 }
 
 .link-container .navbar-link {
@@ -59,8 +71,43 @@ body {
     color: rgb(204,204,204);
 }
 
-.link-container .navbar-link:active {
+.link-container .navbar-link: {
     color: rgb(204,204,204);
+}
+
+.container {
+    margin: auto;
+    background-color: white;
+    height: 100%;
+    width: 80%;
+}
+
+.home-picture {
+    display: table-cell;
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    background-color: red;
+    
+    
+}
+
+.container .footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    color: black;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.footer .footer-info {
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 0.05rem;
+    font-size: smaller;
 }
 
 
