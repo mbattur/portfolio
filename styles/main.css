@@ -57,7 +57,6 @@ body {
     color: white;
     background-color: gray;
     margin-left: 10.8rem;
-    height: 15rem;
     min-width: 960px;
     min-height: 100%;
     
@@ -72,16 +71,41 @@ body {
      background-size: cover;
 }
 
-.about-content {
-    position: relative;
-    padding-left: 30rem;
-    padding-top: 2rem;
-    font-size: 20px;
-    text-indent: -2rem;
-    
+.about-cta {
+    margin-left: 33rem;
+}
+
+.cta-container {
+    height: 4rem;
+    width: 17rem;
+    background-color: rgb(255,255,255);
 }
 
 
+.cta-link{
+    text-align: center;
+    display: block;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 0.01rem;
+    
+}
+
+.container-content {
+    position: relative;
+    padding-left: 30rem;
+    padding-top: 2rem;
+}
+
+.home-text {
+    font-size: 24px;
+}
+
+.about-text {
+    text-indent: -2rem;
+}
 
 .project-container {
      position: relative; 
@@ -92,6 +116,16 @@ body {
      background-size: cover;
 }
 
+.project-content {
+    position: relative;
+    padding-left: 15rem;
+    padding-top: 4rem;
+}
+
+.project-cta {
+    margin-left: 15rem;
+}
+
 .quotes-container {
      position: relative; 
      min-height: 400px;
@@ -99,6 +133,16 @@ body {
      background-repeat: no-repeat;
      background-position: center center;
      background-size: cover;
+}
+
+.quotes-content {
+    position: relative;
+    padding-left: 40rem;
+    padding-top: 2rem;
+}
+
+.quotes-cta {
+    margin-left: 34rem;
 }
 
 .contact-container {
