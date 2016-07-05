@@ -19,7 +19,7 @@ body {
 }
 
 .main-header {
-    height: 350px;
+    height: 430px;
     background-image: url(../images/header.bj.jpg);
     background-size: cover;
 }
@@ -48,7 +48,7 @@ body {
 
 .navbar-list:hover {
     text-decoration: none;
-    color: rgba(0.0.0.1);
+    color: rgba(0,0,0,0.1);
 }
 
 
@@ -60,9 +60,8 @@ body {
     font-weight: 600;
     letter-spacing: 0.05em;
     color: white;
-    text-align: center;
     clear: both;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .head span {
@@ -78,6 +77,21 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: white;
+}
+
+.footer-wrap {
+    float: left;
+    width: 100%;
+    background-image: url(../images/header.bj.jpg);
+    background-size: cover;
+}
+
+.footer-p {
+    padding-top: 20px;
+    margin-left: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
 }
 
 
