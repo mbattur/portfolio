@@ -1,56 +1,83 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html {
     min-height: 100%;
     font-size: 100%;
 }
 
 body {
-    font-family: 'Bitter', serif;
+    font-family: 'Open Sans', sans-serif;
     color: black;
     min-height: 100%;
-}
-
-.landing {
     margin: auto;
-    max-width: 64rem;
+    max-width: 94rem;
     
 }
 
-.navbar {
-    height: 160px;
-    background-color: white;
-    padding: 30px 1rem;
+.main-header {
+    height: 350px;
+    background-image: url(../images/header.bj.jpg);
+    background-size: cover;
 }
 
 .logo {
-    float:left;
-    height: 130px;
-    width: 131px;
-    cursor: pointer;
-}
-
-.link-container {
+    height: 50px;
     float: left;
+    margin: 30px 0 0 30px;
 }
 
-.navbar-link {
-    list-style-type: none;
+.nav {
+    margin: 30px 30px 0 0;
+    float: right;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
-.navbar-list {
-    font-family: 'Bitter', serif;
-    display:block;
-    color: black;
-    list-style-type: none;
+.nav a {
+    display: inline-block;
+    margin-left: 20px;
+    color: rgba(0,0,0,0.5);
     text-decoration: none;
-    padding: 3px 0 4px 10px;
-    font-weight: lighter;
-    letter-spacing: 0.08rem;
+    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 }
 
 .navbar-list:hover {
     text-decoration: none;
-    color: rgb(204,204,204);
+    color: rgba(0.0.0.1);
+}
+
+
+.head {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: white;
+    text-align: center;
+    clear: both;
+    padding-top: 40px;
+}
+
+.head span {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border: 8px white solid ;
+}
+
+.kicker {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
 }
 
 
@@ -69,116 +96,82 @@ body {
 
 /*
 
-.landing .container {
-    color: white;
-    background-color: gray;
-    margin-left: 10.8rem;
-    min-width: 960px;
-    min-height: 100%;
-    
-}
-
 .about-container {
-     position: relative; 
-     min-height: 400px;
-     background-image: url(../images/about-bg.png);
-     background-repeat: no-repeat;
-     background-position: center center;
-     background-size: cover;
-}
-
-.about-cta {
-    margin-left: 33rem;
-}
-
-.cta-container {
-    height: 4rem;
-    width: 17rem;
-    background-color: rgb(255,255,255);
+    height: 450px;
+    background-image: url(../images/about-bg.png);
+    background-size: cover;
+    margin-left: 188px;
 }
 
 
-.cta-link{
-    text-align: center;
-    display: block;
-    color: black;
-    text-decoration: none;
+
+
+
+
+
+
+
+
+
+@media (min-width: 320px) {
+    .navbar {
+    max-width: 100%;
+    padding: 0 3rem 0;
+    background-color: white;
+    
+}
+   .logo-container {
+    background-image: url(../images/jaga-logo.png);
+    background-size: cover;
+    float:left;
+    height: 70px;
+    width: 70px;
     cursor: pointer;
-    font-size: 20px;
-    padding-top: 0.01rem;
+}
+}
+
+
+
+
+@media (min-width: 640px) and (max-width: 1024px){
+    html {
+        font-size: 120%;
+    }
+    
+    .logo-container {
+    background-image: url(../images/jaga-logo.png);
+    background-size: cover;
+    float:left;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    }
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 120%;
+    }
     
 }
 
-.container-content {
-    position: relative;
-    padding-left: 30rem;
-    padding-top: 2rem;
-}
 
-.home-text {
-    font-size: 24px;
-}
 
-.about-text {
-    text-indent: -2rem;
-}
 
-.project-container {
-     position: relative; 
-     min-height: 400px;
-     background-color: rgb(203,203,202);
-     background-repeat: no-repeat;
-     background-position: center center;
-     background-size: cover;
-}
 
-.project-content {
-    position: relative;
-    padding-left: 15rem;
-    padding-top: 4rem;
-}
 
-.project-cta {
-    margin-left: 15rem;
-}
 
-.quotes-container {
-     position: relative; 
-     min-height: 400px;
-     background-color: rgb(235,235,99);
-     background-repeat: no-repeat;
-     background-position: center center;
-     background-size: cover;
-}
 
-.quotes-content {
-    position: relative;
-    padding-left: 40rem;
-    padding-top: 2rem;
-}
 
-.quotes-cta {
-    margin-left: 34rem;
-}
 
-.contact-container {
-     position: relative; 
-     min-height: 300px;
-     background-color: rgb(228,69,88);
-     background-repeat: no-repeat;
-     background-position: center center;
-     background-size: cover;
-}
 
-.contact-info {
-    text-align: center;
-    font-size: 50px;
-    padding-top: 5rem;
-}
-.email-link {
-    text-decoration: none;
-    color: white;
-}
+
+
+
+
+
+
+
 
 
 
