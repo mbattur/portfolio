@@ -37,6 +37,15 @@ body {
     letter-spacing: 0.05em;
 }
 
+#pull a {
+    display: inline-block;
+    margin-left: 20px;
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
 .nav a {
     display: inline-block;
     margin-left: 20px;
@@ -45,6 +54,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 }
+
+#pull {
+    display: none;
+}
+
 
 .navbar-list:hover {
     text-decoration: none;
@@ -105,67 +119,44 @@ body {
 
 
 
-
-
-
-/*
-
-.about-container {
-    height: 450px;
-    background-image: url(../images/about-bg.png);
-    background-size: cover;
-    margin-left: 188px;
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 320px) {
-    .navbar {
-    max-width: 100%;
-    padding: 0 3rem 0;
-    background-color: white;
+@media only screen and (max-width: 640px) {
     
+    .hide-later {
+        display: none;
+        height: auto;
+    }
+    
+    #pull {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    
+    
+   
 }
-   .logo-container {
-    background-image: url(../images/jaga-logo.png);
-    background-size: cover;
-    float:left;
-    height: 70px;
-    width: 70px;
-    cursor: pointer;
-}
-}
+
+jQuery(document).ready(function() {
+    jQuery('#pull').click(function(e) {
+        jQuery(this).toggleClass('active');
+        jQuery('.nav').toggleClass('active');
+ 
+        e.preventDefault();
+    });
+});
 
 
 
 
 @media (min-width: 640px) and (max-width: 1024px){
     html {
-        font-size: 120%;
+        font-size: 70%;
     }
-    
-    .logo-container {
-    background-image: url(../images/jaga-logo.png);
-    background-size: cover;
-    float:left;
-    height: 70px;
-    width: 70px;
-    cursor: pointer;
-    }
+   
 }
 
 @media (min-width: 1024px) {
-    html {
-        font-size: 120%;
-    }
+   
     
 }
 
