@@ -130,6 +130,7 @@ body {
     width: 200px;
     float: left;
     padding-bottom: 25px;
+    padding-left: 25px;
 }
 
 .skill-icons {
@@ -159,7 +160,7 @@ body {
     background-color: white;
 }
 
-.skill-9 span:nth-child(n+8) {
+.skill-9 span:nth-child(n+9) {
     background-color: white;
 }
 
