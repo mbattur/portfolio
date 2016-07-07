@@ -109,11 +109,72 @@ body {
 
 
 .main-para {
-    padding: 25px;
-    
-    
-    
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
+
+
+
+.skill-lockup {
+    max-width: 500px;
+    display: inline-block;
+    padding: 20px;
+    text-align: left;
+}
+
+.skill-label {
+    padding-bottom: 4px;
+}
+.skill-unit {
+    width: 200px;
+    float: left;
+    padding-bottom: 25px;
+}
+
+.skill-icons {
+    font-size: 0;
+}
+
+.skill-icons span {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: #779fb8;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.skill-icons span:after {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+   margin: 1px;
+}
+
+.skill-8 span:nth-child(n+8) {
+    background-color: white;
+}
+
+.skill-9 span:nth-child(n+8) {
+    background-color: white;
+}
+
+.skill-7 span:nth-child(n+7) {
+    background-color: white;
+}
+
+.skill-4 span:nth-child(n+4) {
+    background-color: white;
+}
+
+
+
+
+
 
 
 .contact-container {
