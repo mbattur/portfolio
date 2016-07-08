@@ -1,8 +1,18 @@
-jQuery(document).ready(function() {
-    jQuery('#pull').click(function(e) {
-        jQuery(this).toggleClass('active');
-        jQuery('.nav').toggleClass('active');
- 
-        e.preventDefault();
-    });
+$(function() {
+    smoothScroll(1000);
 });
+
+function smoothScroll (duration) {
+    $('a[href^="#]').on('click', function(event) {
+        
+        var target = $( $(this).attr('href') );
+        
+        if ( target.length ) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            },duration);
+        }
+            });
+}
+

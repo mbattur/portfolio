@@ -43,7 +43,7 @@ body {
     margin-left: 20px;
     color: rgba(0,0,0,0.5);
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    
     cursor: pointer;
 }
 
@@ -52,7 +52,6 @@ body {
     margin-left: 20px;
     color: rgba(0,0,0,0.5);
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 }
 
@@ -74,7 +73,7 @@ body {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     color: white;
@@ -102,7 +101,7 @@ body {
 .about-container {
     min-height: 430px;
     background-color: #cad6d7;
-    padding-top: 50px;
+    padding-top: 30px;
     color: black;
     text-align: center;
 }
@@ -117,20 +116,21 @@ body {
 
 
 .skill-lockup {
-    max-width: 500px;
+    max-width: 450px;
     display: inline-block;
-    padding: 20px;
-    text-align: left;
+    padding-top: 30px;
 }
 
 .skill-label {
     padding-bottom: 4px;
 }
 .skill-unit {
-    width: 200px;
+    width: 180px;
     float: left;
+    margin-left: 20px;
     padding-bottom: 25px;
     padding-left: 25px;
+    text-align: left;
 }
 
 .skill-icons {
@@ -146,16 +146,6 @@ body {
     margin-right: 3px;
 }
 
-.skill-icons span:after {
-    content: "";
-    display: block;
-    height: 10px;
-    width: 10px;
-    background-color: white;
-    border-radius: 50%;
-   margin: 1px;
-}
-
 .skill-8 span:nth-child(n+8) {
     background-color: white;
 }
@@ -168,11 +158,59 @@ body {
     background-color: white;
 }
 
-.skill-4 span:nth-child(n+4) {
+.skill-4 span:nth-child(n+3) {
     background-color: white;
 }
+.link-link {
+    padding-bottom: 10px;
+}
 
+.about-link {
+    display: inline-block;
+    clear: both;
+    padding: 10px 30px;
+    background-color: white;
+    font-weight: bold;
+    color: #779fb8;
+}
 
+.see-more:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.work-container {
+    min-height: 430px;
+    background-color: #e56295;
+    padding-top: 30px;
+    color: black;
+    text-align: center;
+}
+
+.work-link {
+    display: inline-block;
+    clear: both;
+    padding: 10px 30px;
+    background-color: white;
+    font-weight: bold;
+    color: #e56295;
+}
+
+.quotes-container {
+    min-height: 430px;
+    background-color: #654d58;
+    padding-top: 30px;
+    color: black;
+    text-align: center;
+}
+
+.quotes-link {
+    display: inline-block;
+    clear: both;
+    padding: 10px 30px;
+    background-color: white;
+    font-weight: bold;
+    color: #654d58;
+}
 
 
 
