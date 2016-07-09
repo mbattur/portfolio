@@ -19,20 +19,22 @@ body {
 }
 
 .main-header {
-    min-height: 430px;
     background-image: url(../images/header.bj.jpg);
     background-size: cover;
     background-position: center center;
+    padding-bottom: 70px;
 }
 
 .logo {
     height: 50px;
     float: left;
-    margin: 30px 0 0 30px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .nav {
-    margin: 35px 30px 0 0;
+    margin-top: 35px;
+    margin-right: 10px;
     float: right;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -49,7 +51,7 @@ body {
 
 .nav a {
     display: inline-block;
-    margin-left: 20px;
+    margin-right: 20px;
     color: rgba(0,0,0,0.5);
     text-decoration: none;
     cursor: pointer;
@@ -65,15 +67,12 @@ body {
     color: rgba(0,0,0,0.1);
 }
 
-.head-pad {
-    padding: 10px;
-}
 
 .head {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 64px;
     font-weight: 600;
     letter-spacing: 0.05em;
     color: white;
@@ -99,7 +98,7 @@ body {
 }
 
 .about-container {
-    min-height: 430px;
+    padding-bottom: 70px;
     background-color: #cad6d7;
     padding-top: 30px;
     color: black;
@@ -154,6 +153,10 @@ body {
     background-color: white;
 }
 
+.skill-11 span:nth-child(n+11) {
+    background-color: white;
+}
+
 .skill-7 span:nth-child(n+7) {
     background-color: white;
 }
@@ -179,7 +182,7 @@ body {
 }
 
 .work-container {
-    min-height: 430px;
+    padding-bottom: 70px;
     background-color: #e56295;
     padding-top: 30px;
     color: black;
@@ -196,8 +199,8 @@ body {
 }
 
 .quotes-container {
-    min-height: 430px;
-    background-color: #654d58;
+    padding-bottom: 70px;
+    background-color: #efefef;
     padding-top: 30px;
     color: black;
     text-align: center;
@@ -207,9 +210,40 @@ body {
     display: inline-block;
     clear: both;
     padding: 10px 30px;
-    background-color: white;
+    background-color: #e24040;
     font-weight: bold;
-    color: #654d58;
+    color: #efefef;
+}
+
+.picture-container {
+    padding: 20px;
+}
+
+.pictures {
+    display: inline-block;
+    width: 160px;
+    height: 240px;
+}
+
+.is-emph{
+    animation-name: tada;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.alchemist {
+    background-image: url(../images/alchemist.jpg);
+}
+
+.harrypotter {
+    background-image: url(../images/harrypotter.jpg);
+}
+.stevejobs {
+    background-image: url(../images/stevejobs.jpg);
+}
+
+.franklin {
+    background-image: url(../images/franklin.jpg);
 }
 
 
@@ -315,6 +349,28 @@ body {
 @media (min-width: 640px) and (max-width: 1024px){
 }
 
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
 
 
 
