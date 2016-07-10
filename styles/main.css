@@ -322,6 +322,9 @@ body {
         width: 100%;
         position: relative;
     }
+    .nav {
+        margin-right: 50px;
+    }
     
    .nav a {
     display: block;
