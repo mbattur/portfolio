@@ -1,9 +1,11 @@
 /*global $ */
 
 $(document).ready(function() {
+    
     smoothScroll(700);
     
-    $("h1").fitText(1, { minFontSize: '20px', maxFontSize: '64px' });
+    $(".head").fitText(1, { minFontSize: '20px', maxFontSize: '64px' });
+    
     
     setInterval(function(){articleTada()}, 4000);
     
@@ -64,3 +66,9 @@ function smoothScroll (duration) {
   };
 
 })( $ );
+
+
+
+function myFunction() {
+    document.getElementById('myDropdown').classList.toggle('show');
+}

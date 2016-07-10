@@ -30,11 +30,16 @@ body {
     float: left;
     margin-left: 30px;
     margin-top: 30px;
+    z-index: 100;
+}
+
+.show {
+    display: block;
 }
 
 .nav {
     margin-top: 35px;
-    margin-right: 10px;
+    margin-right: 20px;
     float: right;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -45,7 +50,6 @@ body {
     margin-left: 20px;
     color: rgba(0,0,0,0.5);
     text-decoration: none;
-    
     cursor: pointer;
 }
 
@@ -274,6 +278,9 @@ body {
     color: white;
     cursor: pointer;
 }
+.email-address {
+    padding: 10px 10px;
+}
 
 
 
@@ -309,17 +316,31 @@ body {
 
 
 @media screen and (max-width: 569px) {
-       
-    .hide-later {
-        display: none;
-        height: auto;
-    }
     
     #pull {
         display: block;
         width: 100%;
         position: relative;
     }
+    
+   .nav a {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    text-align: left;
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        padding-left: 10px;
+        background-color: white;
+    
+      
+}
     
     .head {
         font-size: 4rem;
