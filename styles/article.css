@@ -1,6 +1,7 @@
 body {
     font-family: 'Inconsolata';
-    
+    background-color: white;
+    color: black;
 }
 
 header {
@@ -16,19 +17,16 @@ a {
     color: black;
 }
 
-.home-btn {
-    float: left;
-    width: 30%;
-    padding-left: 60px;
-    padding-top: 40px;
-    
+.tohome {
+    max-width: 70px;
+    margin-left: 30px;
+    margin-top: 25px;
 }
 
 .list {
-    float: left;
-    width: 50%;
-    padding-top: 10px;
-    
+    max-width: 320px;
+    margin: auto;
+    padding: 0 30px;
 }
 
 span {
@@ -36,3 +34,5 @@ span {
     color: gray;
     font-size: 14px;
 }
+
+
