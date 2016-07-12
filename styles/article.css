@@ -1,0 +1,38 @@
+body {
+    font-family: 'Inconsolata';
+    
+}
+
+header {
+    padding-bottom: 10px;
+}
+
+article {
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.home-btn {
+    float: left;
+    width: 30%;
+    padding-left: 60px;
+    padding-top: 40px;
+    
+}
+
+.list {
+    float: left;
+    width: 50%;
+    padding-top: 10px;
+    
+}
+
+span {
+    font-weight: lighter;
+    color: gray;
+    font-size: 14px;
+}
