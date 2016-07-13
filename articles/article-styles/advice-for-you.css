@@ -1,0 +1,33 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+    
+}
+
+.div-container {
+    margin-top: 0;
+}
+
+.para {
+    font-size: 140px;
+    letter-spacing: 10px;
+}
+
+.read {
+    color: red;
+}
+
+.the {
+    color: blue;
+}
+
+.alchemist {
+    color: green;
+}
