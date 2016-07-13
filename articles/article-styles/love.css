@@ -1,0 +1,28 @@
+.body-container {
+    background-image: url(../images/paper-bg.jpg);
+    font-family: 'Special Elite', cursive;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.container {
+    max-width: 44rem;
+    margin: auto;
+    padding: 300px 15px 300px 15px;
+    line-height: 40px
+}
+
+.head {
+    text-indent: -30px;
+}
+
+.line {
+     opacity: 0;
+}
+
+
+@media screen and (max-width: 815px) {
+    .head {
+        text-indent: 0px;
+    }
+}
