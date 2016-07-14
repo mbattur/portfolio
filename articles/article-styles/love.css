@@ -5,6 +5,14 @@
     color: rgba(0, 0, 0, 0.8)
 }
 
+.gradient {
+    height: 150px;
+    width: 100%;
+    background-image: url(../images/gradient2.png);
+    position: fixed;
+    margin: 0;
+}
+
 .container {
     max-width: 44rem;
     margin: auto;
@@ -20,13 +28,13 @@
      opacity: 0;
 }
 
-.line1.in-view {
-    opacity: 1;
-}
-
 
 @media screen and (max-width: 815px) {
     .head {
         text-indent: 0px;
+    }
+    
+    .line {
+        opacity: 1;
     }
 }
