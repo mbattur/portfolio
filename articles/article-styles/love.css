@@ -20,6 +20,10 @@
      opacity: 0;
 }
 
+.line1.in-view {
+    opacity: 1;
+}
+
 
 @media screen and (max-width: 815px) {
     .head {
