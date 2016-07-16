@@ -6,9 +6,11 @@ $(document).ready(function() {
     
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
+        
+        var lines = $('.line');
     
         /* Check the location of each desired element */
-        $('.line').each( function(i){
+        lines.each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight() + 250;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -20,8 +22,9 @@ $(document).ready(function() {
                 $(this).animate({'opacity':'1'},500).addClass('black');
                 $(this).siblings().removeClass('black');
                 
-                
             }
+            
+        
         }); 
     
     });
