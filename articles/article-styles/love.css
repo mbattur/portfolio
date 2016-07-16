@@ -5,11 +5,18 @@
 }
 
 .body-container {
+    margin: 0;
     background-image: url(../images/paper-bg.jpg);
     font-family: 'Special Elite', cursive;
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.8);
-    padding: 0;
+    color: #c6c6c6;
+}
+
+.gradient {
+    height: 200px;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(rgb(255,255,255), rgba(229,229,225,0.1));
 }
 
 
@@ -21,12 +28,31 @@
 }
 
 .head {
+    display: inline-block;
     text-indent: -30px;
+    color: rgba(0, 0, 0, 0.8);
 }
+
+
+
+.blink {
+    display: inline-block;
+    height: 30px;
+    width: 3px;
+    background-color: #699ec7;
+}
+
+
 
 .line {
      opacity: 0;
 }
+
+.black {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
 
 footer {
     font-family: 'Inconsolata';
@@ -55,7 +81,8 @@ footer {
 
 
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 745px) {
+    
     .head {
         text-indent: 0px;
     }
