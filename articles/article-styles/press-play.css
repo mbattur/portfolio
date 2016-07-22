@@ -17,7 +17,6 @@ body{
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 3px;
 }
 
 .clearfix {
@@ -32,6 +31,7 @@ body{
     border-color: rgba(226,64,64,0.7);;
     border-width: 10px;
     border-style: solid;
+    letter-spacing: 3px;
 }
 
 .line {
@@ -47,6 +47,8 @@ body{
     display: inline-block;
     font-size: 90px;
     height: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .tool-container {
@@ -64,7 +66,7 @@ body{
     color: white;
     padding: 10px;
     cursor: pointer;
-    
+    letter-spacing: 3px;
 }
 
 #pause {
@@ -84,10 +86,15 @@ body{
     margin: 40px;
 }
 
+#volume::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: pink;
+    
+}
+
 #traker {
     display: inline-block;
     width: 100%;
-    position: relative;
     margin: auto;
     
 }
@@ -98,7 +105,7 @@ body{
     width: 60%;
     height: 8px;
     margin: auto;
-    background-color: pink;
+    background-color: rgba(255,255,255,0.5);
     border-radius: 10px;
 }
 
@@ -107,7 +114,7 @@ body{
     position: absolute;
     height: 8px;
     left: 0;
-    background-color: red;
+    background-color: rgba(255,255,255,0.6);
     border-radius: 10px;
 }
 
@@ -116,17 +123,33 @@ body{
     padding: 4px 8px;
 }
 
+footer {
+    font-family: 'Inconsolata';
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+    height: 3rem;
+    background-color: white;
+    color: black;
+    vertical-align: middle;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
 
+.footer-logo {
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem 2rem 0.5rem 0.5rem;
+    background-image: url(../../images/jaga-logo.png);
+    background-size: cover;
+    float: left;
+}
 
-
-
-
-
-
-
-
-
-
+.back-to-article {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 640px) {
@@ -136,6 +159,15 @@ body{
     
     #volume {
         width: 70%;
+    }
+    
+    footer {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .footer-logo {
+        margin-right: 1rem;
     }
 }
 

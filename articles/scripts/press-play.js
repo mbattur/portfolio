@@ -18,7 +18,6 @@ $(document).ready(function() {
         audio.play();
         $('#play').hide();
         $('#pause').show();
-        $('#duration').fadeIn(400);
         showDuration();
     })
     
@@ -27,6 +26,10 @@ $(document).ready(function() {
         $('#pause').hide();
         $('#play').show();
     })
+    
+    $('#volume').change(function() {
+        audio.volume = parseFloat(this.value / 10);
+    });
     
     function showDuration() {
         $(audio).bind('timeupdate', function() {
