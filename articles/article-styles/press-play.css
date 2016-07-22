@@ -59,6 +59,22 @@ body{
     position: relative;
 }
 
+.play-btn {
+    display: inline-block;
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    z-index: 100;
+}
+
+.play-btn:hover {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 #play {
     display: block;
     margin: auto;
