@@ -175,7 +175,6 @@ footer {
 .prev-next{
     display: block;
     margin: 7px;
-    color: rgba(0,0,0,0.8);
     float: right;
     font-size: 36px;
 }
@@ -183,15 +182,23 @@ footer {
 .prev-article {
     display: inline-block;
     cursor: pointer;
-    color: black;
     text-decoration: none;
+    color: #8e8d8e;
 }
 
 .next-article {
     display: inline-block;
     cursor: pointer;
-    color: black;
     text-decoration: none;
+    color: #8e8d8e;
+}
+
+.prev-article:hover {
+    color: rgba(0,0,0,0.8);
+}
+
+.next-article:hover {
+    color: rgba(0,0,0,0.8);
 }
 
 
