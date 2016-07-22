@@ -66,6 +66,7 @@ footer {
     letter-spacing: 3px;
     position: fixed;
     bottom: 0;
+    text-transform: uppercase;
 }
 
 .footer-logo {
@@ -75,6 +76,12 @@ footer {
     background-image: url(../../images/jaga-logo.png);
     background-size: cover;
     float: left;
+}
+
+.ps {
+    display: inline-block;
+    cursor: pointer;
+    padding: 16px 40px 16px 0px;
 }
 
 .back-to-article {
