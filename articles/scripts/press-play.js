@@ -52,7 +52,20 @@ $(document).ready(function() {
 
 
     $(".head1").fitText(1, { minFontSize: '20px', maxFontSize: '90px' });
-
+    
+        $(".back-to-article").hide();
+        
+        $(".ps").mouseenter(function() {
+            $(".back-to-article").slideDown(400);
+            $(".ps").hide();
+        });
+        
+        
+        $(".back-to-article").mouseleave(function() {
+            $(".back-to-article").hide();
+            $(".ps").slideDown();
+        });
+        
 });
 
 (function( $ ){
