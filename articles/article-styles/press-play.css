@@ -17,6 +17,8 @@ body{
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
+    margin: 0;
+    min-height: 510px;
 }
 
 .clearfix {
@@ -25,7 +27,7 @@ body{
 
 .head-container {
     width: 70%;
-    margin: auto;
+    margin: 40px auto;
     text-align: center;
     padding-bottom: 20px;
     border-color: rgba(226,64,64,0.7);;
@@ -134,6 +136,8 @@ footer {
     vertical-align: middle;
     font-weight: normal;
     letter-spacing: 3px;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer-logo {

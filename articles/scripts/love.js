@@ -12,7 +12,7 @@ $(document).ready(function() {
         lines.each( function(i){
             
             
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight() + 250;
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() + 280;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             
