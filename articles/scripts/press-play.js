@@ -1,6 +1,53 @@
 /*global $ */
 
 $(document).ready(function() {
+    var audio = document.getElementById('myAudio');
+    
+    initAudio(audio);
+
+    function initAudio(element) {
+        if(!audio.currentTime) {
+        $('#duration').html('0.00');
+    }
+}
+    
+    //Hide Pause Button
+    $('#pause').hide();
+    
+    $('#play').click(function() {
+        audio.play();
+        $('#play').hide();
+        $('#pause').show();
+        $('#duration').fadeIn(400);
+        showDuration();
+    })
+    
+    $('#pause').click(function() {
+        audio.pause();
+        $('#pause').hide();
+        $('#play').show();
+    })
+    
+    function showDuration() {
+        $(audio).bind('timeupdate', function() {
+            var s = parseInt(audio.currentTime % 60);
+            var m = parseInt((audio.currentTime) / 60) %60;
+            
+            if( s < 10) {
+                s = '0' + s;
+            }
+            
+            $('#duration').html(m + '.' + s);
+            var value = 0;
+            if(audio.currentTime > 0) {
+                value = Math.floor((100 / audio.duration) * audio.currentTime);
+            }
+            $('#progress').css('width',value+'%');
+        })
+    }
+
+
+
     $(".head1").fitText(1, { minFontSize: '20px', maxFontSize: '90px' });
 
 });
@@ -37,3 +84,23 @@ $(document).ready(function() {
   };
 
 })( $ );
+
+
+/*
+
+initAudio($('#playlist'));
+
+function initAudio(element) {
+    
+    if(!audio.currentTime) {
+        $('#duration').html('0.00');
+    }
+}
+
+$('#play').click( function() {
+    audio.play();
+    $('#play').hide();
+    $('#pause').show();
+    $('#duration').fadeIn(400);
+    showDuration();
+})*/
