@@ -100,23 +100,3 @@ $(document).ready(function() {
   };
 
 })( $ );
-
-
-/*
-
-initAudio($('#playlist'));
-
-function initAudio(element) {
-    
-    if(!audio.currentTime) {
-        $('#duration').html('0.00');
-    }
-}
-
-$('#play').click( function() {
-    audio.play();
-    $('#play').hide();
-    $('#pause').show();
-    $('#duration').fadeIn(400);
-    showDuration();
-})*/

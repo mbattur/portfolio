@@ -1,8 +1,23 @@
 /*global $ */
 
 $(document).ready(function() {
-    
-    $(".para").fitText(1, { minFontSize: '20px', maxFontSize: '140px' });
+
+    // FOOTER JS
+    $(".back-to-article").hide();
+        
+        $(".ps").mouseenter(function() {
+            $(".back-to-article").slideDown(400);
+            $(".ps").hide();
+        });
+        
+        
+        $(".back-to-article").mouseleave(function() {
+            $(".back-to-article").hide();
+            $(".ps").slideDown();
+        });
+        
+            $("h1").fitText(1, { minFontSize: '20px', maxFontSize: '100px' });
+
 });
 
 (function( $ ){
