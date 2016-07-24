@@ -162,7 +162,7 @@ body {
 }
 
 .see-more:hover {
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
 
 .work-container {
@@ -260,17 +260,6 @@ body {
     padding: 10px 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .footer-wrap {
     float: left;
     width: 100%;
@@ -288,10 +277,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.09em;
 }
-
-
-
-
 
 @media screen and (max-width: 569px) {
     
