@@ -166,6 +166,8 @@ body {
 }
 
 .see-more:hover {
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.4);
     box-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
 
@@ -342,24 +344,6 @@ body {
         font-size: 24px;
     }
     
-}
-
-
-
-
-
-
-
-
-@media (min-width: 570px) and (max-width: 640px) {
-    
-}
-
-
-
-
-
-@media (min-width: 640px) and (max-width: 1024px){
 }
 
 

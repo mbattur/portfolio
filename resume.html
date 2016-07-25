@@ -5,7 +5,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>      
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'> 
+        <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="styles/resume.css">
@@ -13,7 +14,7 @@
     </head>
     <body>
         <section class="container">
-        <div class="page1 table table1">
+        <div class="page1 table active-table">
             <table>
                 <tr>
                     <td class="picture-container"></td>
@@ -36,7 +37,7 @@
                 </tr>
             </table>
         </div>
-        <div class="page2 table table2">
+        <div class="page2 table">
             <table>
                         <tr>
                             <th class="content" colspan="2"> 
@@ -83,7 +84,7 @@
 
             </table>
         </div>
-            <div class="page2 table table3">
+            <div class="page2 table">
             <table>
                         <tr>
                             <th class="content" colspan="2"> 
@@ -124,7 +125,7 @@
             </table>
         </div>
         
-        <div class="page2 table table4">
+        <div class="page2 table">
             <table>
                         <tr>
                             <th class="content" colspan="2"> 
@@ -169,7 +170,7 @@
 
             </table>
         </div>
-        <div class="page2 table table5">
+        <div class="page2 table">
             <table class="contact">
                         <tr>
                             <th class="content" colspan="2"> 
@@ -195,18 +196,21 @@
         
         <div class="clearfix"></div>
         
-        <div class="menu-box">
-            <ul>
-                <a href="#" class="resume-link"><li>Cover Letter</li></a>
-                <a href="#" class="resume-link"><li>Education</li></a>
-                <a href="#" class="resume-link"><li>Work Experience 1</li></a>
-                <a href="#" class="resume-link"><li>Work Experience 2</li></a>
-                <a href="#" class="resume-link"><li>Contact Information</li></a>
-            </ul>
-        </div>
+     
         <footer class="footer">
             <a href="index.html"><div class="home ion-ios-home-outline choices"></div></a>
-            <a href="#"><div class="menu ion-drag choices"></div></a>
+            <a href="#"><div onclick="myFunction()" class="menu ion-drag choices">
+                <div class="drop-down-menu" id="myDropdown">
+                    <ul class="menu-box">
+                        <a href="#" class="resume-link"><li>Cover Letter</li></a>
+                        <a href="#" class="resume-link"><li>Education</li></a>
+                        <a href="#" class="resume-link"><li>Work Experience 1</li></a>
+                        <a href="#" class="resume-link"><li>Work Experience 2</li></a>
+                        <a href="#" class="resume-link"><li>Contact Information</li></a>
+                    </ul>
+                </div>
+            </div>
+            </a>
             <a href="#"><div class="print ion-ios-printer-outline choices"></div></a>
             <a href="#"><div class="next ion-android-arrow-forward choices"></div></a>
         </footer>

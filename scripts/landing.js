@@ -85,4 +85,4 @@ window.onclick = function(event) {
       }
     }
   }
-}
+};

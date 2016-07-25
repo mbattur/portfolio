@@ -18,8 +18,12 @@ html {
 .table {
     margin-top: 100px;
     margin-bottom: 0px;
+    display: none;
 }
 
+.active-table {
+    display: block;
+}
 .page1 {
     line-height: 2rem;
     padding-bottom: 150px;
@@ -106,10 +110,17 @@ table {
 }
 
 .menu-box {
-    display: inline-block;
-    border: 2px solid gray;
+    display: block;
+    border: 1px solid rgba(0,0,0,0.1);
     border-radius: 5px;
     background-color: white;
+}
+
+.drop-down-menu {
+    position: absolute;
+    bottom: 70px;
+    margin-left: -70px;
+    display: none;
 }
 
 ul {
@@ -119,48 +130,66 @@ ul {
 
 li {
     list-style: none;
-    padding: 10px 15px;
+    padding: 5px 20px;
     border-left: 2px white solid;
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
 }
 
 .resume-link {
     text-decoration: none;
-    color: black;
+    color: #898989;
 }
 
 li:hover {
-    border-left: 2px blue solid;
+    border-left: 2px #8ddbee solid;
+    background-color: rgba(0,0,0,0.03);
 }
+
 
 .footer {
     display: inline-block;
-    background-color: white;
     width: 100%;
     margin: auto;
-    text-align: center;
     position: fixed;
     bottom: 0;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.home,
+.menu,
+.print {
+    float: left;
+}
+
+
+.next {
+    float: right;
 }
 
 .choices {
     display: inline-block;
-    font-size: 40px;
+    background-color: #f4f4f4;
+    font-size: 20px;
     color: black;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0px 8px 6px -6px black;
+    -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 7px rgba(0,0,0,0.4);
+    box-shadow: 0 0 7px rgba(0,0,0,0.4);
+    border: solid 1px gray;
     border-radius: 5px;
-    padding: 2px 8px;
+    padding: 8px 13px 5px 13px;
     margin: 5px 15px;
     cursor: pointer;
 }
 
-.choices:hover {
-    -webkit-box-shadow: 6px 6px 6px -6px black;
-    -moz-box-shadow: 6px 6px 6px -6px black;
-    box-shadow: 6px 6px 6px -6px black;
+.choices:active {
+    font-size: 15px;
     color: black;
 }
+
+
 
 @media screen and (max-width: 670px) {
     .cover-letter {
@@ -182,6 +211,10 @@ li:hover {
     .left, .right {
         width: 100%;
         float: left;
+    }
+    
+    .drop-down-menu {
+        margin-left: -70px;
     }
 }
 
