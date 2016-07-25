@@ -118,9 +118,22 @@ table {
 
 .drop-down-menu {
     position: absolute;
-    bottom: 70px;
+    bottom: 75px;
     margin-left: -70px;
     display: none;
+}
+
+.drop-down-menu:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -19px;
+    width: 0;
+    height: 0;
+    border-top: solid 20px #e5e5e5;
+    border-left: solid 20px transparent;
+    border-right: solid 20px transparent;
 }
 
 ul {
@@ -155,7 +168,7 @@ li:hover {
     position: fixed;
     bottom: 0;
     background-color: white;
-    padding: 10px 20px;
+    padding: 8px 20px;
 }
 
 .home,
@@ -174,10 +187,7 @@ li:hover {
     background-color: #f4f4f4;
     font-size: 20px;
     color: black;
-    -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0 0 7px rgba(0,0,0,0.4);
-    box-shadow: 0 0 7px rgba(0,0,0,0.4);
-    border: solid 1px gray;
+    border: solid 1px rgba(0,0,0,0.1);
     border-radius: 5px;
     padding: 8px 13px 5px 13px;
     margin: 5px 15px;
@@ -215,6 +225,7 @@ li:hover {
     
     .drop-down-menu {
         margin-left: -70px;
+        bottom: 70px;
     }
 }
 
