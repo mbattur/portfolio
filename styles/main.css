@@ -99,6 +99,10 @@ body {
     color: white;
 }
 
+.main-para {
+    padding-bottom: 20px;
+}
+
 .skill-about {
     background-color: #cad6d7;
     padding-top: 50px;
