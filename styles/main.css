@@ -72,6 +72,7 @@ body {
 
 .hide-nav {
     display: none;
+    width: 100%;
 }
 
 .navbar-list:hover {
@@ -333,6 +334,7 @@ body {
     
     .hide-nav {
         display: block;
+        width: 100%;
     }
     
    .nav {
@@ -344,23 +346,22 @@ body {
     }
     
     #menu-link {
-        position: absolute;
-        width: 100%;
+        position: relative;
         margin-top: 35px;
         text-align: right;
-        padding-right: 30px;
         text-transform: uppercase;
         z-index: 100;
+        width: 100%;
     }
 
 
     .dropdown-content {
         margin-top: 20px;
-        width: 100%;
         display: none;
         position: absolute;
         text-align: center;
         background-color: white;
+        width: 100%;
     }
     
     .navbar-list {
