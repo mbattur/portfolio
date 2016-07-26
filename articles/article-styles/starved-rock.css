@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
-
+html { 
+  background: url(../images/rock-bg.png) no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 
 
