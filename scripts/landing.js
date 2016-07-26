@@ -86,3 +86,15 @@ window.onclick = function(event) {
     }
   }
 };
+
+
+$(window).scroll(function() {
+  articleScroll();
+});
+
+function articleScroll() {
+  var wScroll = $(window).scrollTop();
+  
+  $('.scroll-bg').css('background-position','center -' + wScroll +  'px');
+  
+}

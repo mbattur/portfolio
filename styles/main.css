@@ -114,6 +114,7 @@ body {
     text-align: center;
     padding: 50px 80px 40px 80px;
     color: white;
+    width: 50%;
 }
 
 .main-para {
@@ -123,6 +124,7 @@ body {
 .skill-about {
     background-color: #cad6d7;
     padding-top: 50px;
+    width: 50%;
 }
 
 .skill-label {
@@ -207,32 +209,47 @@ body {
 }
 
 .articles-container {
-    padding-bottom: 70px;
     background-color: #efefef;
-    padding-top: 30px;
-    color: black;
+    width: 100%;
+    display: inline-block;
+}
+
+.article-table {
+    width: 100%;
     text-align: center;
+    //background-image: url(../images/patern.svg);
+}
+
+.article-left {
+    width: 50%;
+    padding: 20px 0;
+}
+
+.article-right {
+    width: 50%;
+    padding: 20px 0;
+}
+
+
+.scroll-bg {
+    background-image: url(../images/scroll-bg.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 340px;
+    margin: auto;
 }
 
 .articles-link {
     font-size: 18px;
     display: inline-block;
-    clear: both;
     padding: 10px 60px;
     background-color: #e24040;
     font-weight: bold;
     color: #efefef;
 }
 
-.picture-container {
-    padding: 20px;
-}
-
-.pictures {
-    display: inline-block;
-    width: 160px;
-    height: 240px;
-}
 
 .is-emph{
     animation-name: tada;
@@ -240,20 +257,6 @@ body {
     animation-fill-mode: both;
 }
 
-.alchemist {
-    background-image: url(../images/alchemist.jpg);
-}
-
-.harrypotter {
-    background-image: url(../images/harrypotter.jpg);
-}
-.stevejobs {
-    background-image: url(../images/stevejobs.jpg);
-}
-
-.franklin {
-    background-image: url(../images/franklin.jpg);
-}
 
 .contact-container {
     min-height: 230px;
@@ -301,6 +304,33 @@ body {
     letter-spacing: 0.09em;
 }
 
+@media screen and (max-width: 995px) {
+    
+    .about-about {
+        float: left;
+        width: 100%;
+        padding: 40px 20px 20px 20px;
+    }
+    
+    .skill-about {
+        width: 100%;
+        float: left;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .article-left {
+        float: left;
+        width: 100%;
+    }
+    
+    .article-right {
+        float: left;
+        width: 100%;
+    }
+}
+
+
 @media screen and (max-width: 569px) {
     
     .hide-nav {
@@ -345,17 +375,6 @@ body {
     .head {
         font-size: 4rem;
         padding-top: 40px;
-    }
-    
-    .about-about {
-        float: left;
-        padding: 40px 20px 20px 20px;
-    }
-    
-    .skill-about {
-        float: right;
-        padding-left: 20px;
-        padding-bottom: 20px;
     }
     .email-link {
         font-size: 24px;
