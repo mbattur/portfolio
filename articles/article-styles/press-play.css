@@ -164,6 +164,7 @@ footer {
     background-image: url(../../images/jaga-logo.png);
     background-size: cover;
     float: left;
+    cursor: pointer;
 }
 
 .ps {

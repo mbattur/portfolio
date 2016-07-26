@@ -31,6 +31,7 @@ footer {
     position: fixed;
     bottom: 0;
     text-transform: uppercase;
+    left: 0;
 }
 
 .footer-logo {
@@ -40,7 +41,9 @@ footer {
     background-image: url(../../images/jaga-logo.png);
     background-size: cover;
     float: left;
+    cursor: pointer;
 }
+
 
 .ps {
     display: inline-block;
@@ -63,6 +66,7 @@ footer {
 }
 
 .prev-article {
+    position: relative;
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
