@@ -5,11 +5,23 @@
 }
 
 html { 
-  background: url(../images/rock-bg.png) no-repeat center fixed; 
+  background: url(../images/rockbg.png) no-repeat center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.title {
+    position: absolute;
+    height: 300px;
+    width: 700px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 120px;
+    color: pink;
+    text-align: center;
+    margin: 150px auto;
 }
 
 
