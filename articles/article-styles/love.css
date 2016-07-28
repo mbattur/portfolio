@@ -23,7 +23,7 @@
 .container {
     max-width: 44rem;
     margin: auto;
-    padding: 360px 15px 300px 15px;
+    padding: 360px 15px 200px 15px;
     line-height: 40px
 }
 
@@ -121,7 +121,13 @@ footer {
     color: rgba(0,0,0,0.8);
 }
 
-
+#disqus_thread {
+    padding: 20px;
+    width: 60%;
+    height: 300px;
+    margin: 0 auto 100px auto;
+    background-color: white;
+}
 
 @media screen and (max-width: 745px) {
     
@@ -141,4 +147,8 @@ footer {
     .footer-logo {
         margin-right: 1rem;
     }
+    
+    #disqus_thread {
+    width: 90%;
+}
 }

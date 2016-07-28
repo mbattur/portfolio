@@ -210,6 +210,14 @@ footer {
 }
 
 
+#disqus_thread {
+    padding: 20px;
+    width: 60%;
+    margin: 150px auto;
+    background-color: #e6e6e6;
+}
+
+
 @media screen and (max-width: 640px) {
     .head-container {
         width: 95%;
@@ -226,6 +234,10 @@ footer {
     
     .footer-logo {
         margin-right: 1rem;
+    }
+    
+    #disqus_thread {
+        width: 95%;
     }
 }
 
