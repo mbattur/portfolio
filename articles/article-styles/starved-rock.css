@@ -5,32 +5,47 @@
 }
 
 html { 
-  background: url(../images/window.jpg) no-repeat center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  //background-color: #4A3A47
 }
- body {
-    font-family: 'Jura', sans-serif;
+
+.container {
+    width: 100%;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.box {
      width: 80%;
      margin: auto;
+     -webkit-transform: skewX(5deg);
+     -moz-transform: skewX(5deg);
+     transform: skewX(5deg);
+ }
+ 
+ .head-pic {
+     background-color: #4A3A47;
+     margin: 0;
+     height: 500px;
+ }
+ 
+ 
+ .header {
+     margin: 0;
+     font-size: 120px;
+     font-weight: bold;
+     line-height: 1.05;
+     color: #FFCD57;
+     padding: 150px 60px;
+     
+ }
+ 
+ aside {
+     font-size: 20px;
+     line-height: 0;
+     text-transform: uppercase;
+     padding-top: 15px;
  }
 
-.text {
-    margin: 250px 60px;
-    color: white;
-    font-size: 150px;
-    text-transform: uppercase;
-    text-shadow: 0px -5px 35px rgba(255,255,255,0.8);
-}
-
-
-.flash {
-    -webkit-animation: flash 4s linear infinite;
-    -moz-animation: flash 4s linear infinite;
-    animation: flash 4s 5s infinite steps(2);
-}
 
 
 
@@ -130,13 +145,4 @@ footer {
 }
 
 
-@keyframes flash {
-  from, 50%, to {
-    opacity: 1;
-  }
-
-  25%, 75% {
-    opacity: 0;
-  }
-}
 
