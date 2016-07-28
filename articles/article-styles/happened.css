@@ -1,0 +1,165 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html { 
+  background: url(../images/window.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+ body {
+    font-family: 'Jura', sans-serif;
+     width: 80%;
+     margin: auto;
+ }
+
+.text {
+    margin: 250px 60px;
+    color: white;
+    font-size: 150px;
+    text-transform: uppercase;
+    text-shadow: 0px -5px 35px rgba(255,255,255,0.8);
+}
+
+
+.flash {
+    -webkit-animation: flash 4s linear infinite;
+    -moz-animation: flash 4s linear infinite;
+    animation: flash 4s infinite steps(2);
+}
+
+
+
+
+
+
+footer {
+    font-family: 'Inconsolata';
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+    height: 3rem;
+    background-color: white;
+    color: black;
+    vertical-align: middle;
+    font-weight: normal;
+    letter-spacing: 3px;
+    position: fixed;
+    bottom: 0;
+    text-transform: uppercase;
+    left: 0;
+}
+
+.footer-logo {
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem 2rem 0.5rem 0.5rem;
+    background-image: url(../../images/jaga-logo.png);
+    background-size: cover;
+    float: left;
+    cursor: pointer;
+}
+
+
+.ps {
+    display: inline-block;
+    cursor: pointer;
+    padding: 16px 40px 16px 0px;
+}
+
+.back-to-article {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.prev-next{
+    display: block;
+    margin: 7px;
+    float: right;
+    font-size: 36px;
+}
+
+.prev-article {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #8e8d8e;
+}
+
+.next-article {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #8e8d8e;
+}
+
+.prev-article:hover {
+    color: rgba(0,0,0,0.8);
+}
+
+.next-article:hover {
+    color: rgba(0,0,0,0.8);
+}
+
+#disqus_thread {
+    padding: 20px;
+    width: 60%;
+    margin: 150px auto;
+    background-color: rgba(244,249,0,0.3);
+}
+
+@media screen and (max-width: 800px) {
+    .footer-logo {
+        margin-right: 1rem;
+    }
+    
+    .text {
+        margin: 120px 5px;
+        font-size: 90px;
+    }
+    
+    #disqus_thread {
+        width: 95%;
+    }
+}
+
+
+@media (min-width: 321px) and (max-width: 800px) {
+    
+    footer {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .footer-logo {
+        margin-right: 1rem;
+    }
+    
+    .text {
+        margin: 200px 20px;
+        font-size: 90px;
+    }
+    
+    #disqus_thread {
+        width: 80%;
+    }
+}
+
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+

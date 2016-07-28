@@ -251,7 +251,7 @@ body {
 }
 
 
-.is-emph{
+.is-emp{
     animation-name: tada;
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -407,30 +407,5 @@ body {
     transform: scale3d(1, 1, 1);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
