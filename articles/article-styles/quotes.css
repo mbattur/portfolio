@@ -41,33 +41,20 @@ html {
     left: 0;
     text-decoration: none;
     padding: 0;
+    width: 45px;
 }
 
-.table {
-      list-style: none;
-      height: 40px;
-}
-
-.cell {
-    position: relative;
-    display: inline-block;
-}
-
-strong {
-    display: block;
+.line {
+    list-style: none;
     background-color: rgba(255,255,255,0.5);
     width: 35px;
     height: 5px;
+    margin-top: 40px;
 }
 
-.nav-name {
+.active {
     display: block;
-    float: right;
-    position: absolute;
-    margin-left: 40px;
-}
-
-.cell:hover {
+    background-color: white;
     width: 45px;
     height: 8px;
 }
@@ -89,6 +76,12 @@ strong {
     width: 450px;
     margin: auto;
     text-align: justify;
+    display: none;
+    z-index: 1;
+}
+
+.current {
+    display: block;
 }
 
 h1 {
@@ -100,7 +93,7 @@ h1 {
 }
 
 
-.previous {
+.prev-page {
     height: 55px;
     margin-top: 20px;
     text-align: center;
@@ -108,18 +101,20 @@ h1 {
     top: 0;
     display: block;
     width: 100%;
+    z-index: 3;
 }
 
-.next {
+.next-page {
     height: 55px;
     text-align: center;
     position: fixed;
     display: block;
     width: 100%;
     bottom: 60px;
+    z-index: 3;
 }
 
-.start {
+.start-page {
     height: 55px;
     text-align: center;
     position: relative;
@@ -135,20 +130,25 @@ h1 {
     font-size: 36px;
 }
 
+.ion-chevron-down {
+    height: 55px;
+}
+
 
 .ion-chevron-down:hover {
-    margin-top: 20px;
+    padding-top: 20px;
     cursor: pointer;
 }
 
 .ion-chevron-up {
-    margin-top: 20px;
+    padding-top: 20px;
+    height: 55px;
 }
 
 .ion-chevron-up:hover {
-    margin-top: 0;
+    padding-top: 0;
+    cursor: pointer;
 }
-
 
 
 
@@ -224,7 +224,7 @@ footer {
 
 #disqus_thread {
     padding: 20px;
-    width: 300px;
+    width: 450px;
     height: 300px;
     margin: 150px auto;
     background-color: #e6e6e6;
@@ -240,4 +240,28 @@ footer {
     .footer-logo {
         margin-right: 1rem;
     }
+    
+    .page {
+        width: 250px;
+        position: relative;
+        padding-left: 15px;
+    }
+    
+    #disqus_thread {
+        width: 250px;
+        margin-left: 0;
+}
+
+     .side-bar {
+         top: 10px;
+     }
+}
+
+@media screen and (max-width: 400px) {
+    .page {
+        width: 250px;
+        position: relative;
+        padding-left: 15px;
+}
+
 }
