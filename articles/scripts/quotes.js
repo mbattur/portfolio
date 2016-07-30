@@ -15,24 +15,6 @@ $(document).ready(function() {
             $(".ps").slideDown();
         });
         
-        $('.button').hover(
-            function() {
-            $(this).css('height', '50px');
-            }, function() {
-                $(this).css('height', '35px');
-            }
-        );
-        
         
 });
 
-
-var buttonHover = function() {
-    
-    var button = document.getElementsByClassName('button').addEventListener("mouseenter", mouseenter);
-    
-    function mouseenter() {
-        document.getElementsByClassName('button').style.color = "red";
-    }
-    
-}
