@@ -68,6 +68,24 @@ table {
     font-weight: 100;
 }
 
+.rem-link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+
+.point-link {
+    color: gray;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.rem-link:hover {
+    text-decoration: underline;
+}
+
 .left {
     width: 30%;
     border-bottom: 1px solid gray;
