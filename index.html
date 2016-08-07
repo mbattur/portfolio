@@ -5,27 +5,20 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     
         <title>Jagamongol</title>
         <link rel="shortcut icon" href="images/jaga-logo.png" />
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         
     </head>
     <body class="container">
         
-        <!-- Navigation section -->
+    <!-- Navigation section -->
         
         <header class="header">
-            <div class="nav-bar">
-             <!--<div class="logo">
-                <a href="index.html" class="logo-container">
-                    <img src="images/jaga-logo-trans.png" class="img-responsive">
-                </a>-->
-            </div>
-            
-            
             <div class="navbar">
                 <a href="#" class="nav-link">about</a>
                 <a href="#" class="nav-link">resume</a>
@@ -34,62 +27,88 @@
                 <a href="#" class="nav-link">contact</a>
             </div>
             
-            <!-- Navigation section -->
+            <a href="#">
+                <div onclick="myFunction()"  class="hamburger ion-android-menu">
+                    <div class="drop-menu">
+                        <ul class="drop-ul">
+                            <a href="#" class="drop-link"><li class="drop-li">about</li></a>
+                            <a href="#" class="drop-link"><li class="drop-li">resume</li></a>
+                            <a href="#" class="drop-link"><li class="drop-li">work</li></a>
+                            <a href="#" class="drop-link"><li class="drop-li">experiments</li></a>
+                            <a href="#" class="drop-link"><li class="drop-li">Contact</li></a>
+                        </ul>
+                    </div>
+               </div>
+           </a>
+        </header>   
             
+    <!-- Logo section -->    
+    
+    <section class="logo-box">
         
+        <div class="logo-container">
+            <div class="logo"></div>
+            <aside>FRONTEND WEB DEVELOPER</aside>
+        </div>
         
+    </section>
+    
+    <!-- About section -->
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <!--
-            <div class="nav nav-link">
-                <a href="#about-me" class="navbar-list">About</a>
-                <a href="#work" class="navbar-list">Work</a>
-                <a href="#articles" class="navbar-list">Articles</a>
-                <a href="#contact-me" class="navbar-list ">Contact</a>
+    <section class="about-container">
+        <div class="content-container">
+            <p class="title">About me</p>
+            <div class="content">
+                <p>
+                    Frontend Web Developer
+                    Hello, you. Let me tell you a story.
+                    A few months ago I went through a heartbreak. 
+                    While I was going through the usual sad and 
+                    crying stages of heartbreak, my cousin came 
+                    to me and convinced me to learn to code. After 
+                    doing some research on my own I sat in front of 
+                    my computer to learn to code and haven’t got up since then.
+                    After starting to build my own website I was amazed how 
+                    coding invoked my creative side and interest in creating
+                    and building something. And it quickly became one thing 
+                    that keep me up all night, without coffee.
+                    Since I learned how much I could do with coding, 
+                    I have done my best to make coding my daily routine. 
+                    I enrolled in Bloc Online Bootcamp and always search 
+                    for ideas for my articles and challenge myself with 
+                    learning a new thing every day. So keeping myself busy 
+                    with new challenges, I was back to normal from the heartbreak.
+                    With my new knowledge of coding, plus previous work experiences 
+                    I believe I can be good value to any company and deliver a good work.
+                </p>
             </div>
-         </nav>   
-         </div>
-                <h1 class="head"><span>Code & Create</span></h1>
             
-            <p class="kicker">Thinker  //  Hard Worker  //  Helper</p>
-       </header>
+    <!-- Three links -->
+            
+            <div class="contact-choices">
+                <ul class="thumbs">
+                    <li class="icon"><span class="ion-social-linkedin"></span></li>
+                    <a href="#"><li class="button">LinkedIn</li></a>
+                </ul>
+                
+                <ul class="thumbs">
+                    <li class="icon"><span class="ion-social-github"></span></li>
+                     <a href="#"><li class="button">Github</li></a>
+                </ul>
+                
+                <ul class="thumbs">
+                    <li class="icon"><span class="ion-android-mail"></span></li>
+                    <a href="mailto:jagamongol@gmail.com"><li class="button">Email</li></a>
+                </ul>
+            </div>  
+        </div>
+    </section>
        
-       -->
-       
-        
-        <!-- Contact section 
-       
-       <section id="contact-me">
-            <a href="mailto:jagamongol@gmail.com" class="email-link"><div class="contact-container">
-               <p class="email-address">jagamongol@gmail.com</p>
-            </div></a>
-        </section>-->
-        
-        
-       
-       <!-- Footer 
-       
-       <footer class="footer-wrap" id="footer">
-           <div>
-            <p class="footer-p">Made with Love by Jaga</p>
-           </div>
-       </footer>-->
-       
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
-     <script src="scripts/landing.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+    <script src="scripts/landing.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <!-- Google Analytics -->
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

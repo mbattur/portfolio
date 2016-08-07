@@ -1,38 +1,124 @@
-body {
-    font-family: 'Inconsolata';
-    background-color: white;
-    color: black;
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+    margin: 0;
 }
 
-header {
-    padding-bottom: 10px;
+.container {
+    font-family: 'Roboto', sans-serif;
 }
 
-article {
-    padding-bottom: 10px;
+
+.header {
+    display: block;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 200;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-a {
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
     text-decoration: none;
+    color: white;
+    padding: 1em 1em;
+    font-size: 1.1em;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.hamburger {
+    display: none;
+    color: white;
+    width: 100%;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 0;
+    margin-top: 20px;
+}
+
+.drop-ul {
+    background-color: white;
+    list-style:none;
+    padding-left:0;
+}
+
+.drop-li {
+    padding: 15px;
+    
+}
+
+.drop-link {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
     color: black;
 }
 
-.tohome {
-    max-width: 70px;
-    margin-left: 30px;
-    margin-top: 25px;
+.drop-link:hover {
+    color: black;
 }
 
-.list {
-    max-width: 320px;
-    margin: auto;
-    padding: 0 30px;
+.nav-link:last-child {
+    border-right: none;
 }
 
-span {
-    font-weight: lighter;
-    color: gray;
-    font-size: 14px;
+.nav-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    width: 60%;
+    background-color: pink;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 605px) {
+    
+    .navbar {
+        display: none;
+    }
+    
+    .hamburger {
+        display: inline-block;
+    }
+    
+}

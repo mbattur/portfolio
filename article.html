@@ -4,51 +4,46 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>       
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <link type="text/css" rel="stylesheet" href="styles/article.css">
         <title>Articles | Jagamongol</title>
         <link rel="shortcut icon" href="images/jaga-logo.png" />
     </head>
-    <body>
-        <div class="tohome">
-            <a href="index.html">
-            <div class="home-btn">
-            <p> &#8592; Home</p>
-            </div></a>
-        </div>
-     
-        <div class="list">
-            <header>
-                <h1>Article Index</h1>
-            </header>
-            <article>
-                <a href="articles/quotes.html"><div>
-                <p><strong>Never stop learning</strong><br/><span>July 30, 2016</span></p>
-                </div></a>
-            </article>
-            <article>
-                <a href="articles/happened.html"><div>
-                <p><strong>It is all about timing</strong><br/><span>July 27, 2016</span></p>
-                </div></a>
-            </article>
-            <article>
-                <a href="articles/thank-you.html"><div>
-                <p><strong>Big thank you to my...</strong><br/><span>July 22, 2016</span></p>
-                </div></a>
-            </article>
-            <article>
-                <a href="articles/press-play.html"><div>
-                <p><strong>Press Play</strong><br/><span>July 22, 2016</span></p>
-                </div></a>
-            </article>
-            <article>
-                <a href="articles/love.html"><div>
-                <p><strong>Love...</strong><br/><span>July 13, 2016</span></p>
-                </div></a>
-            </article>
-        </div>
+    <body class="container">
         
+        <!-- Navigation section -->
+        
+        <header class="header">
+            <div class="navbar">
+                <a href="#" class="nav-link">about</a>
+                <a href="#" class="nav-link">resume</a>
+                <a href="#" class="nav-link">work</a>
+                <a href="#" class="nav-link">experiments</a>
+                <a href="#" class="nav-link">contact</a>
+            </div>
+            
+            <a href="#">
+                <div onclick="myFunction()"  class="hamburger ion-android-menu">
+                    <div class="drop-menu">
+                        <ul class="drop-ul">
+                            <a href="#" class="drop-link"><li class="drop-li">about</li></a>
+                            <a href="#" class="drop-link"><li class="drop-li">resume</li></a>
+                            <a href="#" class="drop-link"><li class="drop-li">work</li></a>
+                            <a href="#" class="drop-link"><li class="drop-li">experiments</li></a>
+                            <a href="#" class="drop-link"><li class="drop-li">Contact</li></a>
+                        </ul>
+                    </div>
+               </div>
+           </a>
+        </header> 
+        
+        <section class="hero">
+        </section>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+        <script src="scripts/articles.js"></script>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
