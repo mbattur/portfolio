@@ -11,7 +11,6 @@ $(document).ready(function() {
     }
 }
     
-    //Hide Pause Button
     $('#pause').hide();
     
     $('#play').click(function() {
@@ -52,19 +51,6 @@ $(document).ready(function() {
 
 
     $(".head1").fitText(1, { minFontSize: '20px', maxFontSize: '90px' });
-    
-        $(".back-to-article").hide();
-        
-        $(".ps").mouseenter(function() {
-            $(".back-to-article").slideDown(400);
-            $(".ps").hide();
-        });
-        
-        
-        $(".back-to-article").mouseleave(function() {
-            $(".back-to-article").hide();
-            $(".ps").slideDown();
-        });
         
 });
 
@@ -81,18 +67,13 @@ $(document).ready(function() {
 
     return this.each(function(){
 
-      // Store the object
       var $this = $(this);
 
-      // Resizer() resizes items based on the object width divided by the compressor * 10
       var resizer = function () {
         $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
       };
-
-      // Call once to set.
       resizer();
 
-      // Call on resize. Opera debounces their resize by default.
       $(window).on('resize.fittext orientationchange.fittext', resizer);
 
     });

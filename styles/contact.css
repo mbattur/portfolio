@@ -9,6 +9,7 @@ html {
 
 .container {
     font-family: 'Roboto', sans-serif;
+    background-color:#f4f4f4;
 }
 
 
@@ -111,32 +112,33 @@ html {
 .thumbs {
     display: table-cell;
     width: 33.3%;
-    padding: 0 10px;
     overflow: hidden;
     transform: scale(0.9) translateY(3rem);
+    -webkit-transform: scale(0.9) translateY(3rem);
+    -moz-transform: scale(0.9) translateY(3rem);
     transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
     transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
     opacity: 0;
+}
+
+.thumbs-ul {
+    padding: 0 10px;
 }
 
 .visible {
     opacity: 1;
     transform: scale(1) translateY(0);
+    -webkit-transform: scale(1) translateY(0);
+    -moz-transform: scale(1) translateY(0);
 }
 
 li {
     text-decoration: none;
     list-style: none;
-}
-
-.thumbs a {
-    color: #b6b6b6;
-    text-decoration: none;
-}
-
-.thumbs a:hover {
-    text-decoration: none;
-    color: black;
 }
 
 .icon {
@@ -150,9 +152,18 @@ li {
     border-radius: 5px;
 }
 
-.button:hover {
-    cursor: pointer;
+a:hover .icon {
+    color: black;
+}
+
+a {
+    color: #b6b6b6;
+    text-decoration: none;
+}
+
+a:hover .button {
     border: solid 1px black;
+    color: black;
 }
 
 
@@ -171,4 +182,15 @@ li {
         width: 90%;
     }
     
+    .thumbs {
+        display: inline-block;
+        width: 80%;
+    }
+    
+}
+
+@media (min-width: 606px) and (max-width: 850px) {
+    .hero {
+        width: 90%;
+    }
 }

@@ -1,44 +1,6 @@
 /*global $ */
 
 $(document).ready(function() {
-    // FOOTER JS
-   $(".back-to-article").hide();
-        
-        $(".ps").mouseenter(function() {
-            $(".back-to-article").slideDown(400);
-            $(".ps").hide();
-        });
-        
-        
-        $(".back-to-article").mouseleave(function() {
-            $(".back-to-article").hide();
-            $(".ps").slideDown();
-        });
-        
-        
-        
-        /*$('.start').click( function() {
-           var currentPage = $('.current');
-           var nextPage = currentPage.next();
-           
-           var currentLine = $('.active');
-           var nextLine = currentLine.next();
-           
-           if(nextPage.length === 0) {
-               nextPage = $('.page').first();
-               nextLine = $('.line').first();
-       }
-       
-       currentPage.fadeOut(500).removeClass('current');
-       nextPage.fadeIn(600).addClass('current');
-       
-       currentLine.removeClass('active');
-       nextLine.addClass('active');
-       
-           
-        });*/
-        
-        
         $('.next').click( function() {
            var currentPage = $('.current');
            var nextPage = currentPage.next();

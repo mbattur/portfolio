@@ -114,14 +114,27 @@ html {
     border: solid white 3px;
 }
 
+.full-name {
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
 .head {
     font-size: 22px;
     border-bottom: 1px solid gray;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.06em;
+    text-align: left;
 }
 
 .sub-head {
     font-weight: 100;
+}
+
+.cover-letter {
+    letter-spacing: 0.1em;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .contact-choices {
@@ -133,31 +146,32 @@ html {
 }
 
 .thumbs {
-    padding: 0 10px;
     transform: scale(0.9) translateY(3rem);
+    -webkit-transform: scale(0.9) translateY(3rem);
+    -moz-transform: scale(0.9) translateY(3rem);
     transition: all 0.25s ease-in-out;
-    transition-delay: 0.2s;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
     opacity: 0;
+}
+
+.thumbs-ul {
+    padding: 0 5px;
 }
 
 .visible {
     opacity: 1;
     transform: scale(1) translateY(0);
+    -webkit-transform: scale(1) translateY(0);
+    -moz-transform: scale(1) translateY(0);
 }
 
 li {
     text-decoration: none;
     list-style: none;
-}
-
-.thumbs a {
-    color: #b6b6b6;
-    text-decoration: none;
-}
-
-.thumbs a:hover {
-    text-decoration: none;
-    color: black;
 }
 
 .icon {
@@ -168,13 +182,23 @@ li {
 .button {
     border: solid 1px #b6b6b6;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 5px;;
 }
 
-.button:hover {
-    cursor: pointer;
-    border: solid 1px black;
+a:hover .icon {
+    color: black;
 }
+
+a {
+    color: #b6b6b6;
+    text-decoration: none;
+}
+
+a:hover .button {
+    border: solid 1px black;
+    color: black;
+}
+
 
 
 @media screen and (max-width: 605px) {
