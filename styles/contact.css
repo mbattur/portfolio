@@ -5,7 +5,6 @@
 }
 html {
     margin: 0;
-    background-color: #f4f4f4;
 }
 
 .container {
@@ -95,45 +94,25 @@ html {
     color: white;
 }
 
-.hero-container {
-    width: 50%;
-    margin: 150px auto 50px auto;
-    font-size: 16px;
-    color: black;
-    position: relative;
-    display: table;
+.hero {
+    width: 60%;
+    margin: auto;
 }
 
-.picture {
-   float: left;
-    height: 150px;
-    width: 150px;
-    background: url(../images/headshot.png) no-repeat;
-    border-radius: 50%;
-    margin: 0 40px 20px 0px;
-    border: solid white 3px;
-}
-
-.head {
-    font-size: 22px;
-    border-bottom: 1px solid gray;
-    letter-spacing: 0.02em;
-}
-
-.sub-head {
-    font-weight: 100;
-}
 
 .contact-choices {
     position: relative;
+    display: table;
     width: 100%;
-    margin-top: 160px;
+    margin: 100px auto;
     text-align: center;
-    font-size: 12px;
 }
 
 .thumbs {
+    display: table-cell;
+    width: 33.3%;
     padding: 0 10px;
+    overflow: hidden;
     transform: scale(0.9) translateY(3rem);
     transition: all 0.25s ease-in-out;
     transition-delay: 0.2s;
@@ -161,13 +140,13 @@ li {
 }
 
 .icon {
-    font-size: 30px;
+    font-size: 60px;
     color: #b6b6b6;
 }
 
 .button {
     border: solid 1px #b6b6b6;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
 }
 
@@ -175,6 +154,7 @@ li {
     cursor: pointer;
     border: solid 1px black;
 }
+
 
 
 @media screen and (max-width: 605px) {
@@ -187,48 +167,8 @@ li {
         display: inline-block;
     }
     
-}
-
-@media screen and (max-width: 670px) {
-    
-    .hero-container {
-        margin-top: 100px;
+    .hero {
         width: 90%;
-    }
-    
-    .contact-choices {
-        display: none;
-    }
-    
-    
-    .cover-letter {
-        width: 100%;
-        float: left;
-    }
-}
-
-@media (min-width: 671px) and (max-width: 1230px) {
-    .hero-container {
-        width: 70%;
-    }
-}
-
-.roll {
-    animation-name: menu1;
-    animation-duration: 400ms;
-    animation-delay: 300ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes menu1 {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
     }
     
 }

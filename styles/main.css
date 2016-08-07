@@ -14,8 +14,7 @@ html {
 body {
     min-height: 100%;
     min-width: 100%;
-    //background: url(../images/main-bg.jpg) no-repeat center fixed; 
-    background-color: pink;
+    background: url(../images/main-bg.jpg) no-repeat center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -215,19 +214,6 @@ li {
     border: solid 1px black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
 @media screen and (max-width: 605px) {
     
     .navbar {
