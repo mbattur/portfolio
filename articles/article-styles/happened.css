@@ -14,12 +14,13 @@ html {
  body {
     font-family: 'Jura', sans-serif;
      width: 80%;
-     min-height: 80vh;
+     min-height: 100%;
      margin: auto;
  }
 
 .text {
     margin: 250px 60px;
+    min-height: 80vh;
     color: white;
     font-size: 150px;
     text-transform: uppercase;
