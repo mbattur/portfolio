@@ -164,6 +164,7 @@ h1 {
     position: fixed;
     bottom: 0;
     text-transform: uppercase;
+    z-index: 300;
 }
 
 .prev-next {
@@ -211,11 +212,6 @@ h1 {
 
 @media screen and (max-width: 640px) {
     
-    footer {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    
     .footer-logo {
         margin-right: 1rem;
     }
@@ -232,7 +228,7 @@ h1 {
 }
 
      .side-bar {
-         top: 10px;
+         top: -40px;
      }
 }
 
