@@ -172,7 +172,7 @@ body {
     position: relative;
     display: table;
     width: 100%;
-    margin-top: 40px;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -215,7 +215,7 @@ li {
 
 .button {
     border: solid 1px #b6b6b6;
-    padding: 10px 15px;
+    padding: 5px 10px;
     border-radius: 5px;
 }
 
@@ -256,8 +256,8 @@ a:hover .button {
     }
     
     .logo {
-        background: url(../images/logo-300-75-trans-white.png) no-repeat;
-        width: 300px;
+        background: url(../images/logo-300-75-trans-white.png) no-repeat center center;
+        width: 250px;
         height: 75px;
         margin: auto;
     }
