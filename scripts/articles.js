@@ -16,6 +16,8 @@ $(document).ready(function() {
     
   
     setInterval(function(){articleTada();}, 3000);
+    
+    startArticles();
 });
 
 function articleTada(){
@@ -24,3 +26,11 @@ function articleTada(){
     $('.bg-thumbs').eq(randNum).addClass('is-emph');
     //$('.bg-thumbs').siblings().removeClass('is-emph');
 }
+
+function startArticles() {
+    $('.bg-thumbs').each(function(i){
+      setTimeout(function() {
+        $('.bg-thumbs').eq(i).addClass('is-visible');
+      }, 100 * i);
+    });
+  }

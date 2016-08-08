@@ -124,6 +124,7 @@ html {
     border-bottom: 1px solid gray;
     letter-spacing: 0.06em;
     text-align: left;
+    line-height: 30px;
 }
 
 .sub-head {
@@ -134,7 +135,29 @@ html {
     letter-spacing: 0.1em;
     font-weight: 100;
     font-size: 16px;
+    width:70%;
+}
+
+.resume-content {
     line-height: 30px;
+}
+
+.main-title {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.re-title {
+    font-weight: 400;
+}
+
+.re-date {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.re-class {
+    font-weight: 100;
 }
 
 .contact-choices {

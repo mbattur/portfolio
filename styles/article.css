@@ -132,6 +132,11 @@ html {
     font-size: 100px;
     text-align: center;
     padding-top: 20px;
+    opacity: 0;
+}
+
+.bg-thumbs.is-visible {
+    opacity: 1;
 }
 
 .thumb6 {
