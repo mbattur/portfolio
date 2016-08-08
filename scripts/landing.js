@@ -21,7 +21,7 @@ $(document).ready(function() {
   
   function showLinks() {
     var wScroll = $(window).scrollTop();
-  if($('.about-container').offset().top - $(window).height() / 4 < wScroll) {
+  if($('.about-container').offset().top - $(window).height() / 3 < wScroll) {
       $('.thumbs').each(function(i){
         setTimeout(function() {
           $('.thumbs').eq(i).addClass('visible');
