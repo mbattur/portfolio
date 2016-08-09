@@ -254,6 +254,10 @@ footer {
 
 @media screen and (max-width: 605px) {
     
+    .header.hidden {
+        transform: translateY(0);
+    }
+    
     .navbar {
         display: none;
     }
