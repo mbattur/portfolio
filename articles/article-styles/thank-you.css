@@ -14,6 +14,15 @@ body{
     margin: 0;
 }
 
+.instruction {
+    z-index: 500;
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+    font-size: 18px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
 .parent {
     display: flex;
     justify-content: center;
