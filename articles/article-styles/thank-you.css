@@ -15,8 +15,10 @@ body{
 }
 
 .instruction {
-    z-index: 500;
+    position: relative;
+    width: 100%;
     text-align: center;
+    z-index: 500;
     color: rgba(0,0,0,0.5);
     font-size: 18px;
     padding-top: 10px;
