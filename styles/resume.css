@@ -73,14 +73,13 @@ html {
 
 .drop-li {
     padding: 15px;
-    
+    font-weight: 300;
 }
 
 .drop-link {
     text-decoration: none;
     color: white;
     font-size: 14px;
-    font-weight: 300;
     letter-spacing: 0.06em;
     color: black;
 }
@@ -131,12 +130,12 @@ html {
 }
 
 .sub-head {
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .cover-letter {
     letter-spacing: 0.1em;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 16px;
     width:70%;
 }
@@ -156,11 +155,11 @@ html {
 
 .re-date {
     font-style: italic;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .re-class {
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .contact-choices {
@@ -233,7 +232,7 @@ footer {
     line-height: 0;
     padding-top: 7px;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 
