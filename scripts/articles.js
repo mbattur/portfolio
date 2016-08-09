@@ -15,7 +15,7 @@ $(document).ready(function() {
     });
     
   
-    setInterval(function(){articleTada();}, 3000);
+    setInterval(function(){articleTada();}, 2000);
     
     startArticles();
 });
