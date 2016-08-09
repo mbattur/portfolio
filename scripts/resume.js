@@ -18,6 +18,16 @@ $(document).ready(function() {
     
 });
 
+var prev = 0;
+var $window = $(window);
+var nav = $('.header');
+
+$window.on('scroll', function(){
+  var scrollTop = $window.scrollTop();
+  nav.toggleClass('hidden', scrollTop > prev);
+  prev = scrollTop;
+});
+
 function showLinks() {
     
       $('.thumbs').each(function(i){
@@ -26,13 +36,4 @@ function showLinks() {
         }, 200 * i);
       });
     }
-     
-   
-  
-       
-
-
-
-    
-    
     

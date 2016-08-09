@@ -22,10 +22,15 @@ html {
     right: 0;
     position: fixed;
     z-index: 200;
-    background-color: rgba(0,0,0,0.1);
+    background-color: #dbdbdb;
     color: white;
     text-align: center;
     text-transform: uppercase;
+}
+
+.header.hidden {
+  transform: translateY(-100%);
+  transition-duration: 1s;
 }
 
 .nav-link {
@@ -38,6 +43,11 @@ html {
     font-weight: 100;
     letter-spacing: 0.06em;
     border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.nav-up {
+    top: -60px;
+    transition-duration:500ms;
 }
 
 .hamburger {

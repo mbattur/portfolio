@@ -42,6 +42,11 @@ body {
     text-transform: uppercase;
 }
 
+.header.hidden {
+  transform: translateY(-100%);
+  transition-duration: 1s;
+}
+
 .nav-link {
     display: inline-block;
     text-decoration: none;
