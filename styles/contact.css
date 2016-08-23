@@ -8,7 +8,8 @@ html {
 
 .container {
   font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  height: 100vh; }
 
 .header {
   display: block;
@@ -208,9 +209,6 @@ footer {
   line-height: 0;
   padding-top: 7px;
   font-size: 16px;
-  font-weight: 100;
-  position: fixed;
-  bottom: 0;
   font-weight: 300; }
 
 @media screen and (max-width: 605px) {
@@ -228,10 +226,7 @@ footer {
 
   .thumbs {
     display: inline-block;
-    width: 80%; }
-
-  footer {
-    position: relative; } }
+    width: 80%; } }
 @media (min-width: 606px) and (max-width: 850px) {
   .hero {
     width: 90%; } }
