@@ -8,8 +8,6 @@ html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     background-color: #f4f4f4;
-    font-weight: 300;
-    letter-spacing: 0.06em;
 }
 
 .header {
@@ -20,6 +18,9 @@ html {
     position: relative;
     width: 60%;
     margin: 120px auto 0 auto;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    line-height: 30px;
     a {
         font-weight: 400;
         color: black;
@@ -38,7 +39,7 @@ html {
     border-radius: 3px;
     box-shadow: 0 0 1px #999, -2px 2px 3px rgba(0,0,0,.2);
     padding: 0;
-    margin: 60px auto 120px auto;
+    margin: 60px auto 60px auto;
     position: relative;
     overflow: hidden;
 }
@@ -104,8 +105,6 @@ img {
 
 footer {
     background-color: white;
-    bottom: 0;
-    position: fixed;
 }
 
 @media screen and (max-width: 605px) {
