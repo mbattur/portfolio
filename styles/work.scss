@@ -45,6 +45,7 @@ html {
 
 .bravo {
     background: url(../images/before.png) center center no-repeat; 
+    background: cover;
     height: 654px;
     resize: horizontal; 
     position: absolute; 
@@ -85,6 +86,22 @@ html {
     z-index: 200;
 }
 
+.before,
+.after {
+   display: none; 
+   text-align: center;
+   font-weight: 400;
+}
+
+img {
+    display: none;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    padding: 0 15px;
+    border-top: solid 1px $nav-gray;
+}
+
 footer {
     background-color: white;
     bottom: 0;
@@ -100,6 +117,20 @@ footer {
     footer {
          position: relative;
      }
+}
+
+@media screen and (max-width: 620px) {
+    .alfa,
+    .bravo,
+    .instruction {
+        display: none;
+    }
+    
+    img,
+    .before,
+    .after{
+        display: block;
+    }
 }
 
 @media (min-width: 606px) and (max-width: 1157px) {
