@@ -1,7 +1,5 @@
 /*global $ */
 
-
-
 $(document).ready(function() {
     
   
