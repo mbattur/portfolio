@@ -78,6 +78,13 @@ html {
     font-weight: 300;
 }
 
+.re-points {
+    li {
+        padding: 0;
+        list-style-position: outside;
+    }
+}
+
 .contact-choices {
     position: relative;
     width: 100%;
@@ -101,6 +108,10 @@ html {
 
 .thumbs-ul {
     padding: 0 5px;
+    li {
+    text-decoration: none;
+    list-style: none;
+}
 }
 
 .visible {
@@ -108,11 +119,6 @@ html {
     transform: scale(1) translateY(0);
     -webkit-transform: scale(1) translateY(0);
     -moz-transform: scale(1) translateY(0);
-}
-
-li {
-    text-decoration: none;
-    list-style: none;
 }
 
 .icon {
