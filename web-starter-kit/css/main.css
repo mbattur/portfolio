@@ -442,4 +442,13 @@ textarea {
 body {
   font-family: 'Fira Sans', sans-serif; }
 
+.github-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  background-color: #ff7148; }
+  .github-link:hover {
+    text-decoration: none;
+    color: black; }
+
 /*# sourceMappingURL=main.css.map */
