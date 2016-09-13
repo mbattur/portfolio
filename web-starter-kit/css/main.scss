@@ -8,3 +8,14 @@ body {
     font-family: 'Fira Sans', sans-serif;
 }
 
+.github-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: $orange;
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
+}
+
