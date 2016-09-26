@@ -155,6 +155,9 @@ html {
   background: rgba(0, 0, 0, 0.8);
   bottom: 0; }
 
+.thumb7 {
+  background: url(../images/todo-list-sm.png) center center no-repeat; }
+
 .thumb6 {
   background: url(../images/calc-sm.png) center center no-repeat; }
 
