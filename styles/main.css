@@ -12,7 +12,6 @@
   right: 0;
   position: fixed;
   z-index: 200;
-  /* background-color: #dbdbdb; */
   background-color: #dbdbdb;
   color: white;
   text-align: center;
@@ -124,7 +123,6 @@ html {
 body {
   min-height: 100%;
   min-width: 100%;
-  /* background: url(../images/main-bg.jpg) no-repeat center fixed; */
   background: url(../images/main-pic.jpg) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -157,7 +155,7 @@ body {
 .logo {
   background: url(../images/mb-transparent.png) no-repeat;
   width: 600px;
-  height: 160px;
+  height: 110px;
   margin: auto; }
 
 .about-container {
